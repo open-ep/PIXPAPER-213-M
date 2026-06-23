@@ -46,7 +46,7 @@ Step 2. Prepare a 250x122 size picture what you want to showing, then make a ima
 
         Download the PNG to RAW converter base on python3, remember to install opencv package first
         $ sudo apt install python3-opencv
-        $ wget https://github.com/open-EPD/user-space-examples/raw/refs/heads/master/2.13/mono/spi/png2bit.py
+        $ wget https://github.com/open-ep/linux-user-space-examples/raw/refs/heads/master/2.13/mono/spi/png2bit.py
 
         Then, rename your PNG file as test.png, and excute the python script
         $ python3 png2bit.py <png file name>
@@ -56,13 +56,13 @@ Step 2. Prepare a 250x122 size picture what you want to showing, then make a ima
         compiling.
 
         Download a sample header file:
-        wget https://github.com/open-EPD/user-space-examples/raw/refs/heads/master/2.13/mono/spi/png_HEX.h
+        wget https://github.com/open-ep/linux-user-space-examples/raw/refs/heads/master/2.13/mono/spi/png_HEX.h
 
 
 Step 3. Please download the utility source code in the rootfs of D3-G SBC, then compile it and execute the compiled executable file.
 
         PIXPAPER-213-M:
-        # wget https://github.com/open-EPD/user-space-examples/raw/refs/heads/master/2.13/mono/spi/pixpaper-213-m-test-topst-d3-g.c
+        # wget https://github.com/open-ep/linux-user-space-examples/raw/refs/heads/master/2.13/mono/spi/pixpaper-213-m-test-topst-d3-g.c
         # gcc -o epd_test pixpaper-213-m-test-topst-d3-g.c -lgpiod
         # ./epd_test
 
