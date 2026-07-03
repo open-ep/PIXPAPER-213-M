@@ -32,3 +32,9 @@ We will gradually port it to more embedded platforms, so this page will be updat
 | **Platform** | <a href="https://www.renesas.com/" target="_blank"><br> <img src="https://www.macnica.com/apac/galaxy/zh_tw/products-support/products/renesas.coreimg.jpeg/structure/_jcr_content/root/container/container/bannerimage/1653236359047.jpeg" width="" height="100" /></a> | Status |<a href="https://www.nxp.com/" target="_blank"><br> <img src="https://github.com/TechNexion-Vision/.github/assets/28101204/67cc61c0-6bb7-44d5-889a-1ba5d4c0b9b5" width="" height="80" /></a> | Status | <a href="https://www.telechips.com/" target="_blank"><img width="" height="90" alt="image" src="https://github.com/user-attachments/assets/4f260b12-4d99-42e3-b9bd-6b90b2bbec16" /> | Status |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 | **Porting Guide** | [KAKIP SBC(RZ/V2H)](https://github.com/open-ep/PIXPAPER-213-M/blob/main/KAKIP_PIXPAPAER-213-M.md) | &#10004;  |  [FRDM-IMX93(IMX93)](https://github.com/open-ep/PIXPAPER-213-M/blob/main/FRDM-IMX93_PIXPAPAER-213-M.md) | &#10004;| [TOPST D3-G(Dolphin 3M)](https://github.com/open-ep/PIXPAPER-213-M/blob/main/D3-G_PIXPAPAER-213-M.md) | &#10004; |
+
+#### MCU Supported Platforms
+
+| Manufacturer | Board / Core | Porting Guide | Status |
+|:------------|:------------|:--------------|:------:|
+| **UIAP** | UIAPduino Pro Micro CH32V003 (RISC-V) | [📄 Guide](https://github.com/open-ep/PIXPAPER-213-M/blob/main/UIAP-CH32V003_PIXPAPAER-213-M.md) | ✅ |
