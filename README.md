@@ -35,6 +35,6 @@ We will gradually port it to more embedded platforms, so this page will be updat
 
 #### MCU Supported Platforms
 
-| Manufacturer | Board / Core | Porting Guide | Status |
-|:------------|:------------|:--------------|:------:|
-| **UIAP** | UIAPduino Pro Micro CH32V003 (RISC-V) | [📄 Guide](https://github.com/open-ep/PIXPAPER-213-M/blob/main/UIAP-CH32V003_PIXPAPAER-213-M.md) | ✅ |
+| **Platform** | <div align="center"><a href="https://www.uiap.jp/en/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/RISC-V-logo-square.svg/1280px-RISC-V-logo-square.svg.png" height="100" /></a></div> |  Status |
+|:------------|:------------|:------:|
+| **Porting Guide** | [UIAPduino Pro Micro (CH32V003)](https://github.com/open-ep/PIXPAPER-213-M/blob/main/UIAP-CH32V003_PIXPAPAER-213-M.md) | &#10004; |
