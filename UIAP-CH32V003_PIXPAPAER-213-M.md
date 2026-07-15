@@ -32,6 +32,9 @@ Then, connect to the UIAPduino specific PINs as follows:
 | RST | 10 | PD0 |
 | BUSY | 12 (A3) | PD2 |
 
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/e11cbf4a-d1e3-47ab-8665-02c42e660d62" />
+
+
 ## Firmware Update
 
 Step 1. Install the Arduino IDE and the UIAPduino board support
