@@ -97,7 +97,7 @@ User-space drivers provide direct application control without kernel modificatio
 <td align="center" width="25%">
 
 <a href="https://www.renesas.com/" target="_blank">
-<img src="https://www.macnica.com/apac/galaxy/zh_tw/products-support/products/renesas.coreimg.jpeg/structure/_jcr_content/root/container/container/bannerimage/1653236359047.jpeg" height="80">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Renesas_Electronics_logo.svg/330px-Renesas_Electronics_logo.svg.png" height="80">
 </a>
 
 #### Renesas
