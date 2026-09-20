@@ -57,25 +57,16 @@ Step 2. Prepare a 250x122 size picture what you want to showing, then make a ima
         $ sudo apt install python3-opencv
         $ wget https://github.com/open-ep/linux-user-space-examples/raw/refs/heads/master/2.13/mono/spi/png2bit.py
 
-        Then, rename your PNG file as test.png, and excute the python script
-        $ python3 png2bit.py <png file name>
+        Download the sample image
+        $ wget https://github.com/open-ep/linux-user-space-examples/raw/refs/heads/master/2.13/mono/spi/test.png
 
-        Note that png2bit.py is a sample script, nothing in it is set for a specific board. What
-        it does fix is the output format: IMG_WIDTH = 250 / IMG_HEIGHT = 122 are hardcoded and it
-        always writes 'const uint8_t img0[30500]', 8bpp row-major, which is what this utility
-        expects. It also resolves paths next to itself, so keep the PNG in the same folder as the
-        script. Choose the mode that matches how you will run the utility:
-        '--mode mono' (default) for the mono / fast refresh, '--mode gray4' for the 4-grayscale one.
+        Then, rename your PNG file as test.png, and excute the python script
+        $ python3 png2bit.py test.png
 
         It will generate a output file: png_HEX.h, the copy the same folder with pixpaper-213-m-test-milkv-duo256m.c.
         Note that this step must be running on the host PC side for the Duo256M, because the target
         rootfs has no compiler; png_HEX.h must be put into the folder with c file together before
         compiling.
-
-        TODO: publish a ready-made sample png_HEX.h for this guide. Until then, generate your own
-        with png2bit.py above. The utility needs 'const uint8_t img0[250 * 122]', one grayscale
-        byte per pixel, indexed as img0[y * 250 + x]; a header in any other layout will make the
-        program read past the end of the array and crash with a segmentation fault.
 
 Step 3. The Duo256M rootfs ships without a native toolchain, so the utility is cross-compiled on the host with the SDK toolchain and then copied to the board.
 
