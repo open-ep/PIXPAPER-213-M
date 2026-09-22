@@ -72,12 +72,7 @@ Step 3. The Duo256M rootfs ships without a native toolchain, so the utility is c
 
         On the host PC, inside duo-buildroot-sdk-v2:
 
-        PIXPAPER-213-M:
-        TODO: publish pixpaper-213-m-test-milkv-duo256m.c to linux-user-space-examples. Until then,
-        take it from this repository. The sources already in that repo are samples written for
-        other boards, so their EPD_SPI_DEVICE / EPD_GPIO_CHIP / DC# / RST# / BUSY macros point at
-        that board's pinout, never at the Duo256M one, and must be set as shown below.
-
+        $ wget https://github.com/open-ep/linux-user-space-examples/raw/refs/heads/master/2.13/mono/spi/pixpaper-213-m-test-milkv-duo256m.c
         $ SDK=$(pwd)
         $ SYSROOT=$SDK/buildroot/output/milkv-duo256m-musl-riscv64-sd/host/riscv64-buildroot-linux-musl/sysroot
         $ $SDK/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc \
