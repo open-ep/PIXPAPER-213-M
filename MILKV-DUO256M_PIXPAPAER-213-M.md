@@ -19,9 +19,9 @@ Then, connect to the Milk-V Duo256M specific PINs of 26-PIN header as follows:
 | SCK | 9 | GP6 | SPI2_SCK |
 | MOSI | 10 | GP7 | SPI2_SDO |
 | CS# | 12 | GP9 | SPI2_CS |
-| DC# | 21 | GP16 | XGPIOA[23], `gpiochip0` line 23 |
+| DC# | 24 | GP18 | XGPIOA[22], `gpiochip0` line 22 |
 | RST# | 22 | GP17 | XGPIOA[24], `gpiochip0` line 24 |
-| BUSY | 24 | GP18 | XGPIOA[22], `gpiochip0` line 22 |
+| BUSY | 21 | GP16 | XGPIOA[23], `gpiochip0` line 23 |
 
 > **Note:** DC#, RST# and BUSY are plain GPIOs, so any free pin works. GP16 / GP17 / GP18 are picked because they default to GPIO in the Milk-V pinmux, are not claimed by any device tree node, and all three live on the same GPIO chip (`gpiochip0` = XGPIOA), which keeps the source simple. GP26 / GP27 are **not** usable here: their logic level is 1.8V.
 
@@ -91,9 +91,9 @@ Step 3. The Duo256M rootfs ships without a native toolchain, so the utility is c
 
         #define EPD_SPI_DEVICE "/dev/spidev0.0"
         #define EPD_GPIO_CHIP "gpiochip0"
-        #define EPD_DC_PIN 23
+        #define EPD_DC_PIN 22
         #define EPD_RST_PIN 24
-        #define EPD_BUSY_PIN 22
+        #define EPD_BUSY_PIN 23
 
 Expection results: <br>
 Coming soon
